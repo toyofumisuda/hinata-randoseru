@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>【実習】Hinata — 6年間を、軽やかに。</title>
+  <meta name="description" content="【実習】架空のランドセルブランド「Hinata（ひなた鞄工房）」の公式サイト。1,050gの軽量ランドセル「Hinata Air」をはじめとする製品を紹介します。本サイトは講義課題として制作したものです。">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body data-page="home">
+  <div class="practice-bar" role="note">【実習】本サイトは講義課題として制作したものです。<span class="en">This site is created as a course exercise.</span></div>
+
+  <header class="gnav" id="gnav">
+    <nav class="gnav-inner" aria-label="グローバルナビゲーション">
+      <a class="gnav-logo" href="index.html" aria-label="Hinata ホーム">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="19"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(0 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(45 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(90 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(135 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(180 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(225 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(270 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(315 50 50)"/></svg>
+        <span>Hinata</span>
+      </a>
+      <ul class="gnav-links" id="gnav-links">
+        <li><a href="index.html" data-nav="home">ホーム</a></li>
+        <li><a href="air.html" data-nav="air">Hinata Air</a></li>
+        <li><a href="products.html" data-nav="products">ラインナップ</a></li>
+        <li><a href="about.html" data-nav="about">工房について</a></li>
+        <li><a href="contact.html" data-nav="contact">お問い合わせ</a></li>
+      </ul>
+      <a class="gnav-cta" href="contact.html#form">試着を予約</a>
+      <button class="gnav-toggle" type="button" aria-expanded="false" aria-controls="gnav-links" aria-label="メニューを開く"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===== 3D scroll story ===== -->
+    <section class="hero3d" id="hero3d" aria-label="Hinata Air 紹介">
+      <div class="stage">
+        <canvas id="hero-canvas" aria-hidden="true"></canvas>
+        <div class="stage-fallback"><img src="img/randoseru.svg" alt="赤いランドセル Hinata Air のイラスト" width="420" height="420"></div>
+
+        <div class="cap-wrap intro-wrap">
+          <div class="cap hero-intro">
+            <p class="eyebrow">2027年度 入学モデル</p>
+            <h1>Hinata Air</h1>
+            <p class="lead">6年間を、軽やかに。</p>
+          </div>
+        </div>
+        <div class="scroll-hint" aria-hidden="true">スクロール<i></i></div>
+
+        <div class="cap-wrap">
+          <div class="cap cap-a">
+            <p class="eyebrow">せなか</p>
+            <h2>背中に、<br>ぴたり。</h2>
+            <p>左右にゆれる<strong>「ゆらぎ背カン」</strong>が、肩の動きについていきます。背あてには、汗をにがす<strong>エアクッション</strong>。体の小さな1年生でも、重さを感じにくい背負い心地です。</p>
+          </div>
+        </div>
+
+        <div class="cap-wrap right">
+          <div class="cap cap-b">
+            <p class="eyebrow">かるさ</p>
+            <h2>驚くほど、<br>軽い。</h2>
+            <p>中に入れる芯材から見直し、軽くて丈夫な人工皮革「ソラレザー」で仕立てました。</p>
+            <div class="cap-stats"><div><b>1,050<small>g</small></b><span>本体の重さ</span></div><div><b>6<small>年</small></b><span>修理保証</span></div></div>
+          </div>
+        </div>
+
+        <div class="cap-wrap">
+          <div class="cap cap-c">
+            <p class="eyebrow">しゅうのう</p>
+            <h2>ひらけば、<br>ぜんぶ入る。</h2>
+            <p>内寸の幅は<strong>23.5cm</strong>。A4フラットファイルも、タブレットも、教科書も。毎日の「入らない」をなくしました。</p>
+          </div>
+        </div>
+
+        <div class="cap-wrap spec-wrap">
+          <div class="spec-col">
+            <div class="spec"><b>360° 反射材</b><span>夕方の帰り道も安心</span></div>
+            <div class="spec"><b>自動ロック</b><span>閉じるだけで、カチッ</span></div>
+          </div>
+          <div class="spec-col r">
+            <div class="spec"><b>撥水レザー</b><span>雨も汚れも、さっと</span></div>
+            <div class="spec"><b>12色</b><span>好きな色を選べる</span></div>
+          </div>
+        </div>
+
+        <div class="cap-wrap final-wrap">
+          <div class="cap cap-e">
+            <h2 class="grad-text">Hinata Air</h2>
+            <p>¥59,800（税込）。6年間の修理保証つき。</p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="contact.html#form">試着を予約する</a>
+              <a class="btn btn-ghost inv" href="air.html">詳しく見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Lineup ===== -->
+    <section class="section" aria-labelledby="lineup-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">ラインナップ</p>
+          <h2 class="h-l" id="lineup-title">はじめての通学を、<br>ぜんぶ、いっしょに。</h2>
+          <p class="lead">ランドセル、ふでばこ、防犯ブザー。Hinataの道具は、6年間の「いってきます」に寄りそいます。</p>
+        </div>
+        <div class="bento">
+          <article class="tile span-6 center reveal" style="background:#0d0604;color:#f5f5f7">
+            <p class="eyebrow" style="color:#ffc069">2027年度 入学モデル</p>
+            <h3 style="font-size:clamp(34px,4.6vw,56px)">Hinata Air</h3>
+            <p class="tile-sub" style="color:#a1a1a6">1,050g。いちばん軽い、ひなた。</p>
+            <div class="tile-links" style="justify-content:center"><a class="link-more" style="color:#ffb38a" href="air.html">詳しく見る</a><a class="link-more" style="color:#ffb38a" href="contact.html#form">試着を予約</a></div>
+            <div class="tile-3d m3d" data-model="randoseru" data-theme="dark" role="img" aria-label="赤いランドセル Hinata Air の3Dモデル。ふたが開いて教科書が見える"><img src="img/randoseru.svg" alt="赤いランドセル Hinata Air のイラスト" width="420" height="420" loading="lazy"></div>
+          </article>
+          <article class="tile span-4 reveal">
+            <h3>12のカラー</h3>
+            <p class="tile-sub">さくら、よぞら、ミント。好きな色が、きっと見つかる。</p>
+            <div class="tile-links"><a class="link-more" href="products.html#colors">カラーを見る</a></div>
+            <div class="tile-3d m3d" data-model="trio" role="img" aria-label="さくらピンク・ひなたレッド・よぞらネイビーの3つのランドセルの3Dモデル"><img src="img/trio.svg" alt="3色のランドセルのイラスト" width="360" height="300" loading="lazy"></div>
+          </article>
+          <article class="tile span-2 reveal" data-delay=".1">
+            <h3>ひなたガード</h3>
+            <p class="tile-sub">ひもを引けば、大きな音と光。</p>
+            <div class="tile-links"><a class="link-more" href="products.html#buzzer">詳しく見る</a></div>
+            <div class="tile-3d m3d" data-model="buzzer" role="img" aria-label="黄色い防犯ブザー ひなたガードの3Dモデル"><img src="img/buzzer.svg" alt="黄色い防犯ブザーのイラスト" width="200" height="260" loading="lazy"></div>
+          </article>
+          <article class="tile span-6 reveal">
+            <h3>ひなたふでばこ</h3>
+            <p class="tile-sub">ふたの裏に、時間割。あしたの準備が、たのしくなる。</p>
+            <div class="tile-links"><a class="link-more" href="products.html#pencase">詳しく見る</a></div>
+            <div class="tile-3d m3d" data-model="pencase" role="img" aria-label="水色のふでばこの3Dモデル。ふたが開くと鉛筆と時間割が見える"><img src="img/pencase.svg" alt="水色のふでばこのイラスト" width="420" height="260" loading="lazy"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Promise ===== -->
+    <section class="section dark" aria-labelledby="mission-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Hinataの約束</p>
+          <h2 class="h-l" id="mission-title">6年間、<br><span class="grad-text">毎日いっしょに歩くから。</span></h2>
+          <p class="lead">1年生の春から、6年生の卒業式まで。こわれても、背がのびても、ずっと使えるランドセルをつくります。</p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal"><b><span data-count="1050">1,050</span>g</b><span>Hinata Air の本体重量</span></div>
+          <div class="stat reveal" data-delay=".1"><b><span data-count="6">6</span>年</b><span>どんな故障も無償で修理</span></div>
+          <div class="stat reveal" data-delay=".2"><b><span data-count="300">300</span>工程</b><span>職人がひとつずつ手で仕上げる</span></div>
+        </div>
+        <p class="center reveal" style="margin-top:56px"><a class="link-more" href="about.html">工房について詳しく</a></p>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section-tight" aria-label="試着会のご案内">
+      <div class="container">
+        <div class="cta-band reveal">
+          <p class="eyebrow" style="color:#ffd9a0">ご家族のみなさまへ</p>
+          <h2>背負って、えらぼう。</h2>
+          <p>ショールームと全国の試着会で、すべてのカラーを実際に背負えます。予約の方には、名入れ刺しゅうを無料でプレゼント。</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="contact.html#form">試着を予約する</a>
+            <a class="btn btn-ghost inv" href="products.html">ラインナップを見る</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-notes">
+        【実習】本サイトは講義課題として制作したものです。This site is created as a course exercise.<br>
+        ひなた鞄工房株式会社および掲載している製品・価格・仕様・店舗はすべて架空のものです。サイト内の画像・イラスト・3Dモデルはすべて自作です。
+      </div>
+      <div class="footer-cols">
+        <div><h4>ランドセル</h4><ul><li><a href="air.html">Hinata Air</a></li><li><a href="products.html#classic">Hinata Classic</a></li><li><a href="products.html#colors">12のカラー</a></li></ul></div>
+        <div><h4>小物</h4><ul><li><a href="products.html#pencase">ひなたふでばこ</a></li><li><a href="products.html#buzzer">ひなたガード</a></li><li><a href="products.html#services">名入れ刺しゅう</a></li></ul></div>
+        <div><h4>工房について</h4><ul><li><a href="about.html">ひなた鞄工房</a></li><li><a href="about.html#making">ランドセルができるまで</a></li><li><a href="about.html#history">あゆみ</a></li></ul></div>
+        <div><h4>サポート</h4><ul><li><a href="contact.html">お問い合わせ</a></li><li><a href="contact.html#faq">よくある質問</a></li><li><a href="contact.html#form">試着・展示会の予約</a></li><li><a href="products.html#services">6年間修理保証</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Hinata Kaban Kobo Inc.（架空の企業）</span><span>日本</span></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/common.js"></script>
+  <script type="module" src="js/hero.js"></script>
+  <script type="module" src="js/product3d.js"></script>
+</body>
+</html>

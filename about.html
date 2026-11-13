@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>【実習】工房について — Hinata</title>
+  <meta name="description" content="【実習】架空のランドセル工房「ひなた鞄工房」の紹介。大切にしていること、ランドセルができるまで、工房長のメッセージ、会社概要、あゆみを掲載しています。本サイトは講義課題として制作したものです。">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  } }
+  </script>
+</head>
+<body data-page="about">
+  <div class="practice-bar" role="note">【実習】本サイトは講義課題として制作したものです。<span class="en">This site is created as a course exercise.</span></div>
+
+  <header class="gnav" id="gnav">
+    <nav class="gnav-inner" aria-label="グローバルナビゲーション">
+      <a class="gnav-logo" href="index.html" aria-label="Hinata ホーム">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="19"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(0 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(45 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(90 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(135 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(180 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(225 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(270 50 50)"/><rect x="45.5" y="6" width="9" height="19" rx="4.5" transform="rotate(315 50 50)"/></svg>
+        <span>Hinata</span>
+      </a>
+      <ul class="gnav-links" id="gnav-links">
+        <li><a href="index.html" data-nav="home">ホーム</a></li>
+        <li><a href="air.html" data-nav="air">Hinata Air</a></li>
+        <li><a href="products.html" data-nav="products">ラインナップ</a></li>
+        <li><a href="about.html" data-nav="about">工房について</a></li>
+        <li><a href="contact.html" data-nav="contact">お問い合わせ</a></li>
+      </ul>
+      <a class="gnav-cta" href="contact.html#form">試着を予約</a>
+      <button class="gnav-toggle" type="button" aria-expanded="false" aria-controls="gnav-links" aria-label="メニューを開く"><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero" aria-labelledby="ab-title">
+      <div class="container">
+        <p class="eyebrow reveal">工房について</p>
+        <h1 class="h-xl reveal" id="ab-title">ひと針ずつ、<br><span class="grad-text">あたたかく。</span></h1>
+        <p class="lead reveal">ひなた鞄工房は、子どもたちの6年間に寄りそうランドセルをつくる、小さな工房です。</p>
+      </div>
+    </section>
+
+    <section class="section-tight" aria-label="想い">
+      <div class="container">
+        <p class="scrub-text">雨の日も、風の日も、ランドセルは子どもの背中で6年間を過ごします。重たい日も、さみしい日もあるかもしれない。だから私たちは、背負うたびに、ひなたのようなあたたかさを感じられる道具をつくりたい。Hinata という名前には、そんな想いを込めました。</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="val-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">大切にしていること</p>
+          <h2 class="h-l" id="val-title">3つの約束。</h2>
+        </div>
+        <div class="values">
+          <div class="value reveal"><span class="num grad-text">01</span><h3>軽いこと</h3><p>1年生の体は、まだ小さい。素材の1グラムまで見直して、毎日の通学の負担を減らします。</p></div>
+          <div class="value reveal" data-delay=".1"><span class="num grad-text">02</span><h3>こわれないこと</h3><p>300の工程を職人が手で仕上げ、1万回のふたの開け閉めテストに合格したものだけをお届けします。</p></div>
+          <div class="value reveal" data-delay=".2"><span class="num grad-text">03</span><h3>守ること</h3><p>反射材、自動ロック、安全ナスカン。子どもが自分で気づかなくても、ランドセルが守ります。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="making" aria-labelledby="mk-title" style="scroll-margin-top:60px">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">ものづくり</p>
+          <h2 class="h-l" id="mk-title">ランドセルが、できるまで。</h2>
+          <p class="lead">革を選んでから検品まで、ひとつのランドセルにかかる日数はおよそ40日。そのすべてを、ひなた鞄工房の中で行います。</p>
+        </div>
+        <figure class="diagram reveal">
+          <img src="img/making.svg" alt="ランドセルができるまでの図。01素材選び、02裁断、03縫製、04組み立て、05検品 の5つの工程が順番に並んでいる。" width="760" height="460" loading="lazy">
+          <figcaption>図：ランドセルができるまで — 5つの工程（オリジナル図版）</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section dark-2" aria-labelledby="msg-title">
+      <div class="container">
+        <h2 class="sr-only" id="msg-title">工房長メッセージ</h2>
+        <div class="message">
+          <div class="message-img reveal"><img src="img/craftsman.svg" alt="工房長のイラスト" width="400" height="500" loading="lazy"></div>
+          <div class="reveal" data-delay=".1">
+            <p class="eyebrow">工房長メッセージ</p>
+            <blockquote>「卒業式の日に、まだきれいだね」と言ってもらえるように。</blockquote>
+            <p>6年間使ったランドセルを修理に持ってきてくれた子が、「これ、ずっと一緒だったんだ」と話してくれたことがあります。ランドセルは、ただのかばんではなく、子どもの毎日の相棒です。だからこそ、軽く、丈夫に、そして見るたびにうれしくなる形に。ひと針ずつ、心を込めて縫い上げています。</p>
+            <cite>ひなた鞄工房 工房長</cite>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pf-title">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow">会社概要</p><h2 class="h-l" id="pf-title">Company Profile</h2></div>
+        <div class="profile reveal">
+          <dl>
+            <dt>会社名</dt><dd>ひなた鞄工房株式会社（Hinata Kaban Kobo Inc.）※架空の企業です</dd>
+            <dt>設立</dt><dd>2012年4月1日</dd>
+            <dt>所在地</dt><dd>神奈川県藤沢市（架空）</dd>
+            <dt>代表者</dt><dd>代表取締役・工房長</dd>
+            <dt>従業員数</dt><dd>46名（うち職人28名、2026年11月現在）</dd>
+            <dt>事業内容</dt><dd>ランドセル・学童用品の企画・製造・販売<br>ランドセルの修理、ミニランドセルへのリメイク</dd>
+            <dt>店舗</dt><dd>ひなた鞄工房 ショールーム、Hinata オンラインストア、全国試着会（いずれも架空）</dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-alt" id="history" aria-labelledby="hs-title" style="scroll-margin-top:60px">
+      <div class="container">
+        <div class="section-head reveal"><p class="eyebrow">あゆみ</p><h2 class="h-l" id="hs-title">あゆみ</h2></div>
+        <ol class="timeline">
+          <li class="reveal"><time datetime="2012-04">2012年4月</time><h3>小さな工房として創業</h3><p>職人3人で、手縫いのランドセルづくりをはじめる。</p></li>
+          <li class="reveal"><time datetime="2016-03">2016年3月</time><h3>6年間修理保証をスタート</h3><p>どんな故障も卒業まで無償で直す仕組みをつくる。</p></li>
+          <li class="reveal"><time datetime="2020-04">2020年4月</time><h3>ミニランドセル リメイクを開始</h3><p>卒業したランドセルを、手のひらサイズの思い出に。</p></li>
+          <li class="reveal"><time datetime="2024-06">2024年6月</time><h3>ショールームをオープン</h3><p>工房の隣に、全カラーを試着できるショールームを開設。</p></li>
+          <li class="reveal"><time datetime="2026-11">2026年11月</time><h3>Hinata Air 発表</h3><p>ハニカム芯材を初めて採用し、1,050gを実現。</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-tight" aria-label="お問い合わせ">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>工房を、見に来ませんか。</h2>
+          <p>ショールームでは、職人の手仕事を窓ごしに見学できます。ご予約はこちらから。</p>
+          <div class="btn-row"><a class="btn btn-primary" href="contact.html#form">見学・試着を予約</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-notes">
+        【実習】本サイトは講義課題として制作したものです。This site is created as a course exercise.<br>
+        ひなた鞄工房株式会社および掲載している製品・価格・仕様・店舗はすべて架空のものです。サイト内の画像・イラスト・3Dモデルはすべて自作です。
+      </div>
+      <div class="footer-cols">
+        <div><h4>ランドセル</h4><ul><li><a href="air.html">Hinata Air</a></li><li><a href="products.html#classic">Hinata Classic</a></li><li><a href="products.html#colors">12のカラー</a></li></ul></div>
+        <div><h4>小物</h4><ul><li><a href="products.html#pencase">ひなたふでばこ</a></li><li><a href="products.html#buzzer">ひなたガード</a></li><li><a href="products.html#services">名入れ刺しゅう</a></li></ul></div>
+        <div><h4>工房について</h4><ul><li><a href="about.html">ひなた鞄工房</a></li><li><a href="about.html#making">ランドセルができるまで</a></li><li><a href="about.html#history">あゆみ</a></li></ul></div>
+        <div><h4>サポート</h4><ul><li><a href="contact.html">お問い合わせ</a></li><li><a href="contact.html#faq">よくある質問</a></li><li><a href="contact.html#form">試着・展示会の予約</a></li><li><a href="products.html#services">6年間修理保証</a></li></ul></div>
+      </div>
+      <div class="footer-bottom"><span>© <span data-year>2026</span> Hinata Kaban Kobo Inc.（架空の企業）</span><span>日本</span></div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/common.js"></script>
+
+</body>
+</html>
